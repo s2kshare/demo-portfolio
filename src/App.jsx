@@ -11,19 +11,19 @@ import { gsap } from "gsap";
 
 const router = createBrowserRouter([
     {
-        path: "/",
+        path: "/demo-portfolio",
         element: <AppWrapper />,
         children: [
             {
-                path: "/",
+                path: "/demo-portfolio",
                 element: <Home />,
             },
             {
-                path: "/projects",
+                path: "/demo-portfolio/projects",
                 element: <Projects />,
             },
             {
-                path: "/contact",
+                path: "/demo-portfolio/contact",
                 element: <Contact />,
             },
         ],
