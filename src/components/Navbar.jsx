@@ -35,27 +35,29 @@ function Navbar({ setThemeIndex, themeIndex, themeCount }) {
                         className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 bg-primary-content text-primary"
                     >
                         <li>
-                            <Link to={"/projects"}>Projects</Link>
+                            <Link to={"/demo-portfolio/projects"}>
+                                Projects
+                            </Link>
                         </li>
                         <li>
-                            <Link to={"/contact"}>Contact</Link>
+                            <Link to={"/demo-portfolio/contact"}>Contact</Link>
                         </li>
                     </ul>
                 </div>
-                <Link to={"/"} className="btn btn-ghost">
+                <Link to={"/demo-portfolio/"} className="btn btn-ghost">
                     Devontae
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     <li>
-                        <Link to={"/projects"}>Projects</Link>
+                        <Link to={"/demo-portfolio/projects"}>Projects</Link>
                     </li>
                     <li>
-                        <Link to={"/"}>Home</Link>
+                        <Link to={"/demo-portfolio/"}>Home</Link>
                     </li>
                     <li>
-                        <Link to={"/contact"}>Contact</Link>
+                        <Link to={"/demo-portfolio/contact"}>Contact</Link>
                     </li>
                 </ul>
             </div>
