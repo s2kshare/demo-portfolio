@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
-import CodeSnippetAnimation from "./CodeSnippetAnimation";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { IoIosSend } from "react-icons/io";
+import Footer from "./Footer";
 
 function Contact() {
     const layers = useRef([]);
@@ -17,7 +17,7 @@ function Contact() {
     useGSAP((e) => {
         const mouseMoveFunc = (e) => {
             layers.current.forEach((layer, index) => {
-                const depth = 65;
+                const depth = layer.getAttribute("data-depth");
                 const moveX = (e.pageX - window.innerWidth / 2) / depth;
                 const moveY = (e.pageY - window.innerHeight / 2) / depth;
                 index++;
@@ -84,6 +84,7 @@ function Contact() {
                     </button>
                 </form>
             </div>
+            <Footer />
         </div>
     );
 }

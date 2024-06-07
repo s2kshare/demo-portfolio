@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
-import CodeSnippetAnimation from "./CodeSnippetAnimation";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import Card from "./Card";
+import Footer from "./Footer";
 
 function Projects() {
     const layers = useRef([]);
@@ -10,7 +10,7 @@ function Projects() {
     useGSAP((e) => {
         const mouseMoveFunc = (e) => {
             layers.current.forEach((layer, index) => {
-                const depth = 35;
+                const depth = layer.getAttribute("data-depth");
                 const moveX = (e.pageX - window.innerWidth / 2) / depth;
                 const moveY = (e.pageY - window.innerHeight / 2) / depth;
                 index++;
@@ -86,8 +86,7 @@ function Projects() {
                     </div>
                 </div>
             </div>
-
-            <div className="absolute left-0 bottom-0"></div>
+            <Footer />
         </div>
     );
 }

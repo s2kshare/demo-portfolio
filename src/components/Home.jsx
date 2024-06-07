@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import CodeSnippetAnimation from "./CodeSnippetAnimation";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import art_1 from "../assets/FLYINGBLIND.png";
