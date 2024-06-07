@@ -43,7 +43,7 @@ function Projects() {
                     Projects
                 </div>
                 <div className="w-5/6 overflow-y-scroll">
-                    <div className="grid grid-cols-2 grid-rows-3 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-3 gap-4">
                         <Card
                             ref={(element) => (layers.current[2] = element)}
                             data-depth="100"

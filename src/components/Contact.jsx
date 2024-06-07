@@ -46,7 +46,7 @@ function Contact() {
                 >
                     Contact Me!
                 </div>
-                <form action="" className="flex flex-col w-2/6">
+                <form action="" className="flex flex-col w-4/6 md:w-2/6">
                     <input
                         type="text"
                         placeholder="Name"
@@ -76,7 +76,7 @@ function Contact() {
                     <button
                         ref={(element) => (layers.current[2] = element)}
                         data-depth="100"
-                        className="btn btn-wide hover:btn-neutral bg-neutral-content text-neutral hover:text-neutral-content mt-6 self-end"
+                        className="btn hover:btn-neutral bg-neutral-content text-neutral hover:text-neutral-content mt-6 self-end"
                         onClick={sendForm}
                     >
                         Submit
